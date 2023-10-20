@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 
 namespace Communication
@@ -34,6 +35,10 @@ namespace Communication
         /// </summary>
         public List<Defect> Defects { get; set; } = new List<Defect>();
         /// <summary>
+        /// Segmented part contour
+        /// </summary>
+        public List<Point> PartContour { get; set; } = new List<Point>();
+        /// <summary>
         /// Clear internal resources
         /// </summary>
         public void Clear()
@@ -49,6 +54,14 @@ namespace Communication
             else
             {
                 Defects.Clear();
+            }
+            if (PartContour == null) 
+            {
+                PartContour = new List<Point>();
+            }
+            else
+            {
+                PartContour.Clear();
             }
         }
     }
