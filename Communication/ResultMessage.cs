@@ -23,7 +23,7 @@ namespace Communication
         /// </summary>
         public int SystemID { get; set; } = -1;
         /// <summary>
-        /// Name of camera that image is taken
+        /// Name of camera the image is taken
         /// </summary>
         public string CameraName { get; set; } = "";
         /// <summary>
@@ -31,7 +31,7 @@ namespace Communication
         /// </summary>
         public string Part { get; set; } = "";
         /// <summary>
-        /// List of wrinkle or other defects  contours
+        /// List of wrinkles or other defects  contours
         /// </summary>
         public List<Defect> Defects { get; set; } = new List<Defect>();
         /// <summary>
