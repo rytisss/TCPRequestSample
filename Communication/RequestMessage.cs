@@ -62,7 +62,7 @@ namespace Communication
         /// <summary>
         /// Main threshold for wrinkles
         /// </summary>
-        public float Threshold { get; set; } = 0.95f;
+        public float Threshold { get; set; } = 0.9f;
         /// <summary>
         /// Borderline threshold. It is substracted from the main 'Threshold'. For example 'Threshold' = 0.5f and the 'ThresholdBorderline' = 0.1f,
         /// so the calculated borderline threshold will be 0.4f
@@ -84,7 +84,7 @@ namespace Communication
             ImageChannelsCount = 0;
             ImageAsBase64 = "";
             ImageName = "";
-            Threshold = 0.5f;
+            Threshold = 0.9f;
             ThresholdBorderline = 0.1f;
         }
     }
