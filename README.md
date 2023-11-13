@@ -5,4 +5,4 @@ Description/example for TCP message request formation and response parsing. Chec
 https://github.com/rytisss/TCPRequestSample/blob/d83900b9fcabeefe88d9b8cf640cd405c9f94402/Communication/RequestMessage.cs#L13-L79
 
 # Response defect structure  
-https://github.com/rytisss/TCPRequestSample/blob/a808f4e5b3332ca2d6203840bb8c942dc99da316/Communication/ResultMessage.cs#L8-L67
+https://github.com/rytisss/TCPRequestSample/blob/a5e880d2044bc517785165dd41b37633cb8296da/Communication/RequestMessage.cs#L13-L90
