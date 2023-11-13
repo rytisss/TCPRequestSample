@@ -141,7 +141,7 @@ namespace Communication
                     Console.WriteLine("Client disconnected from server, nothing else to do, quiting...");
                     break;
                 }
-                Thread.Sleep(5000);
+                Thread.Sleep(15000);
                 //Increment iteration counter
                 IterationIndex++;
                 //Reset counter if it is too big

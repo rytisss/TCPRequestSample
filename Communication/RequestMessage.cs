@@ -60,6 +60,15 @@ namespace Communication
         /// </summary>
         public string ImageAsBase64 { get; set; } = "";
         /// <summary>
+        /// Main threshold for wrinkles
+        /// </summary>
+        public float Threshold { get; set; } = 0.95f;
+        /// <summary>
+        /// Borderline threshold. It is substracted from the main 'Threshold'. For example 'Threshold' = 0.5f and the 'ThresholdBorderline' = 0.1f,
+        /// so the calculated borderline threshold will be 0.4f
+        /// </summary>
+        public float ThresholdBorderline { get; set; } = 0.1f;
+        /// <summary>
         /// Reset all internal parameter
         /// </summary>
         public void Clear()
@@ -75,6 +84,8 @@ namespace Communication
             ImageChannelsCount = 0;
             ImageAsBase64 = "";
             ImageName = "";
+            Threshold = 0.5f;
+            ThresholdBorderline = 0.1f;
         }
     }
 }
